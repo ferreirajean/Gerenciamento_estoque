@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Style.css" />
+    <title>Sistema de Gerenciamento de Estoque</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1>Sistema de gerenciamento de Estoque</h1>
+        <nav>
+          <a href="#" class="nav-button">Gerenciamento</a>
+          <a href="#" class="nav-button">Cadastrar Produto</a>
+          <a href="#" class="nav-button">Movimentação</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <div class="container">
+        <h2>Casdatrar Produto</h2>
+        <div class="form-container">
+          <form>
+            <div class="form-group full-width">
+              <label for="nome-produto">Nome do Produto:</label>
+              <input type="text" id="nome-produto" />
+            </div>
+
+            <div class="form-group full-width">
+              <label for="descricao">Descrição:</label>
+              <textarea id="descricao" rows="4"></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="preco-custo">Preço de custo:</label>
+              <input type="number" id="preco-custo" value="0" />
+            </div>
+
+            <div class="form-group">
+              <label for="preco-venda">Preço de Venda:</label>
+              <input type="number" id="preco-venda" />
+            </div>
+
+            <div class="form-group">
+              <label for="quantidade-estoque">Quantidade em Estoque:</label>
+              <input type="number" id="quantidade-estoque" />
+            </div>
+
+            <div class="form-group">
+              <label for="categoria">Categoria:</label>
+              <select id="categoria">
+                <option value="">Selecione uma categoria</option>
+              </select>
+            </div>
+
+            <div class="form-actions full-width">
+              <button type="submit" class="btn btn-primary">
+                Salvar Produto
+              </button>
+              <button type="reset" class="btn btn-secondary">Limpar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
